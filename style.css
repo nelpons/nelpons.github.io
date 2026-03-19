@@ -1,4 +1,4 @@
-/* ----- Couleurs principales ----- */
+/* ----- Palette Tranquil Waters ----- */
 :root {
     --deep: #1F363D;        /* bleu très foncé */
     --blue: #40798C;        /* bleu moyen */
@@ -9,7 +9,6 @@
     --text-dark: #1F363D;
     --background: #F7F9FA;
 }
-
 
 /* ----- Style global ----- */
 body {
@@ -22,7 +21,7 @@ body {
 /* ----- Navigation ----- */
 header {
     background: white;
-    border-bottom: 2px solid var(--turquoise);
+    border-bottom: 2px solid var(--mint);
     padding: 10px 20px;
 }
 
@@ -36,20 +35,20 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--blue-dark);
+    color: var(--deep);
     font-weight: 600;
     transition: color 0.2s;
 }
 
 nav a:hover {
-    color: var(--turquoise);
+    color: var(--mint);
 }
 
-/* ----- Section d'accueil ----- */
+/* ----- Section d'accueil (Hero) ----- */
 .hero {
     position: relative;
     height: 350px;
-    background-image: url("assets/hero.jpg");
+    background-image: url("assets/hero.jpg"); /* à remplacer par ton image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -66,7 +65,6 @@ nav a:hover {
     animation: fadeIn 1.2s ease;
 }
 
-
 .hero h1 {
     font-size: 3.2rem;
     margin-bottom: 10px;
@@ -76,7 +74,7 @@ nav a:hover {
     font-size: 1.3rem;
 }
 
-/* ----- Contenu ----- */
+/* ----- Contenu général ----- */
 .content {
     max-width: 900px;
     margin: 40px auto;
@@ -84,18 +82,19 @@ nav a:hover {
 }
 
 .content h1, .content h2 {
-    color: var(--blue-dark);
+    color: var(--deep);
 }
 
 .content a {
-    color: var(--turquoise);
+    color: var(--mint);
     font-weight: bold;
 }
 
 .content a:hover {
-    color: var(--turquoise-light);
+    color: var(--sage);
 }
 
+/* ----- Cartes (profil, expériences) ----- */
 .profile-card, .experience {
     background: white;
     border-radius: 12px;
@@ -103,12 +102,25 @@ nav a:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     animation: fadeInUp 0.8s ease;
     border-left: 6px solid var(--mint);
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--mint);
+}
+
+/* ----- Titres ----- */
 h1, h2 {
     color: var(--deep);
 }
 
+/* ----- Liens ----- */
 a {
     color: var(--blue);
     font-weight: 600;
@@ -118,6 +130,7 @@ a:hover {
     color: var(--mint);
 }
 
+/* ----- Boutons ----- */
 .button {
     background: var(--blue);
     color: white;
@@ -131,6 +144,7 @@ a:hover {
     background: var(--mint);
 }
 
+/* ----- Footer ----- */
 footer {
     background: var(--deep);
     color: white;
@@ -139,6 +153,7 @@ footer {
     margin-top: 40px;
 }
 
+/* ----- Animations ----- */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -147,4 +162,27 @@ footer {
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----- Expériences ----- */
+.experience h2 {
+    color: var(--mint);
+}
+
+/* ----- Réseaux sociaux ----- */
+.socials {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.socials a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: var(--deep);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+    color: var(--mint);
+    transform: scale(1.15);
 }
