@@ -1,11 +1,15 @@
 /* ----- Couleurs principales ----- */
 :root {
-    --turquoise: #1ABC9C;
-    --turquoise-light: #48C9B0;
-    --blue-dark: #0A3D62;
-    --text-dark: #2C3E50;
+    --deep: #1F363D;        /* bleu très foncé */
+    --blue: #40798C;        /* bleu moyen */
+    --mint: #70A9A1;        /* turquoise doux */
+    --sage: #9EC1A3;        /* vert clair */
+    --breeze: #CFE0C3;      /* vert très pâle */
+
+    --text-dark: #1F363D;
     --background: #F7F9FA;
 }
+
 
 /* ----- Style global ----- */
 body {
