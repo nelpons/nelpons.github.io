@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage en Roumanie – Nelly Pons</title>
+
+    <!-- Ton CSS global -->
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- CSS spécifique si tu en as un -->
+    <link rel="stylesheet" href="roumanie.css">
+</head>
+
+<body>
+
 <section class="page-header">
     <h1>Stage en Roumanie</h1>
     <p>Materials Science Laboratory • Université Politehnica de Bucarest • 2018</p>
@@ -57,3 +73,25 @@
     </p>
 
 </section>
+
+<!-- … tout ton HTML … -->
+
+<script>
+const track = document.querySelector('.carousel-track');
+const images = Array.from(track.children);
+let index = 0;
+
+document.querySelector('.next').onclick = () => {
+    index = (index + 1) % images.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+};
+
+document.querySelector('.prev').onclick = () => {
+    index = (index - 1 + images.length) % images.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+};
+</script>
+
+</body>
+</html>
+
