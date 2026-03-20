@@ -55,7 +55,7 @@ nav a:hover {
 }
 
 /* ----- Section d'accueil (Hero) ----- */
-.hero-full {
+/* .hero-full {
     height: 100vh;
     background: linear-gradient(135deg, var(--blue), var(--mint));
     display: flex;
@@ -64,7 +64,20 @@ nav a:hover {
     text-align: center;
     color: white;
     padding: 0 20px;
+} */
+.hero-full {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    overflow: hidden;
+    background: none; /* IMPORTANT */
 }
+
 
 .hero-content h1 {
     font-size: 4rem;
