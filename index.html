@@ -10,103 +10,114 @@
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li class="dropdown">
-                <a href="pro.html">Professionnel</a>
-                <ul class="dropdown-menu">
-                    <li><a href="pro/airbus.html">Airbus</a></li>
-                    <li><a href="pro/esa.html">ESA – ESTEC</a></li>
-                    <li><a href="pro/these.html">Thèse</a></li>
-                    <li><a href="pro/competences.html">Compétences</a></li>
-                    <li><a href="pro/cv.html">CV</a></li>
-                </ul>
-            </li>
-
-            <li><a href="perso.html">Personnel</a></li>
-            <li><a href="en/index.html">EN</a></li>
-        </ul>
-    </nav>
-</header>
-<section class="hero-full">
-    <div class="hero-content">
-        <h1>Nelly Pons</h1>
-        <p>Ingénieure matériaux & mécanique — performance, innovation, aventure.</p>
-        <a href="#content" class="scroll-btn">Découvrir ↓</a>
-    </div>
-</section>
-<section id="content" class="content reveal">
-
-    <section class="hero">
-        <div class="hero-overlay">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="pro.html">Professionnel</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pro/airbus.html">Airbus</a></li>
+                        <li><a href="pro/esa.html">ESA – ESTEC</a></li>
+                        <li><a href="pro/these.html">Thèse</a></li>
+                        <li><a href="pro/competences.html">Compétences</a></li>
+                        <li><a href="pro/cv.html">CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="perso.html">Personnel</a></li>
+                <li><a href="en/index.html">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <!-- <section class="hero-full">
+        <div class="hero-content">
             <h1>Nelly Pons</h1>
-            <p>Ingénieure matériaux & mécanique – performance, innovation, aventure.</p>
+            <p>Ingénieure matériaux & mécanique — performance, innovation, aventure.</p>
+            <a href="#content" class="scroll-btn">Découvrir ↓</a>
         </div>
-        <div class="hero-socials">
-            <a href="https://www.linkedin.com/in/nelly-pons-1140a7131"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/nelpons"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/nelly_pons/"><i class="fab fa-instagram"></i></a>
-        </div>
-
-    </section>
+    </section> -->
+    <section class="hero-full video-hero">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="assets/background.mp4" type="video/mp4">
+        </video>
     
-    <section class="profile-card">
-        <img src="assets/Nelly_PhD.jpg" alt="Photo de Nelly" class="profile-photo">
-        <div>
-            <h2>À propos</h2>
-            <p>
-                Ingénieure spécialisée en matériaux, mécanique et fabrication additive. 
-                Expérience internationale (France, Allemagne, Pays-Bas, Canada). 
-                Passionnée par la performance, l’innovation et les projets à haute exigence.
-            </p>
+        <div class="hero-content">
+            <h1>Nelly Pons</h1>
+            <p>Ingénieure matériaux & mécanique — performance, innovation, aventure.</p>
+            <a href="#content" class="scroll-btn">Découvrir ↓</a>
         </div>
     </section>
- <!-- ton contenu actuel -->
-</section>
-<section class="socials">
-    <a href="https://www.linkedin.com/in/nelly-pons-1140a7131" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/nelpons" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/nelly_pons/" target="_blank"><i class="fab fa-instagram"></i></a>
-</section>
-    
-<script>
-// --- Menu transparent qui devient opaque ---
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-
-// --- Scroll vers le contenu ---
-document.querySelector(".scroll-btn")?.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector("#content").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-// --- Animation scroll reveal ---
-function revealOnScroll() {
-    document.querySelectorAll(".reveal").forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-            el.classList.add("visible");
+        
+    <section id="content" class="content reveal">
+        <!-- <section class="hero">
+            <div class="hero-overlay">
+                <h1>Nelly Pons</h1>
+                <p>Ingénieure matériaux & mécanique – performance, innovation, aventure.</p>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/nelly-pons-1140a7131"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nelpons"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/nelly_pons/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section> -->
+        <section class="profile-card">
+            <img src="assets/Nelly_PhD.jpg" alt="Photo de Nelly" class="profile-photo">
+            <div>
+                <h2>À propos</h2>
+                <p>
+                    Ingénieure spécialisée en matériaux, mécanique et fabrication additive. 
+                    Expérience internationale (France, Allemagne, Pays-Bas, Canada). 
+                    Passionnée par la performance, l’innovation et les projets à haute exigence.
+                </p>
+            </div>
+        </section>
+    </section>
+        
+    <section class="socials">
+        <a href="https://www.linkedin.com/in/nelly-pons-1140a7131" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nelpons" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/nelly_pons/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </section>
+        
+    <script>
+    // --- Menu transparent qui devient opaque ---
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
         }
     });
-}
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll(); // pour révéler ce qui est déjà visible au chargement
-</script>
+    
+    // --- Scroll vers le contenu ---
+    document.querySelector(".scroll-btn")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector("#content").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+    
+    // --- Animation scroll reveal ---
+    function revealOnScroll() {
+        document.querySelectorAll(".reveal").forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add("visible");
+            }
+        });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // pour révéler ce qui est déjà visible au chargement
+    </script>
 
+    <footer>
+        <p>© 2026 – Nelly Pons | Portfolio personnel</p>
+    </footer>
+    
 </body>
 
-<footer>
-    <p>© 2026 – Nelly Pons | Portfolio personnel</p>
-</footer>
+
 
 </html>
