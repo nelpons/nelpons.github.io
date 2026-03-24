@@ -1,0 +1,219 @@
+/* ------------------------------------------
+   LAYOUT — Header, footer, sections globales
+------------------------------------------- */
+
+/* ----- HEADER MODERNE ----- */
+.header-modern {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.25);
+    transition: background 0.3s ease;
+}
+
+.header-modern.scrolled {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.header-modern nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----- LOGO ----- */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 45px;          /* Taille idéale pour un header moderne */
+    width: auto;
+    object-fit: contain;
+    filter: brightness(1); /* Garde le blanc propre sur fond sombre */
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* NAVIGATION */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 8px 0;
+    transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--mint);
+}
+
+/* ----- DROPDOWN ----- */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    border-radius: 8px;
+    list-style: none;
+    min-width: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: 0.25s ease;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* ----- SOUS-MENU ----- */
+.dropdown-sub {
+    position: relative;
+}
+
+/* Sous-menu par défaut → ouverture à droite */
+.dropdown-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: auto;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    border-radius: 8px;
+    list-style: none;
+    min-width: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: 0.25s ease;
+}
+
+.submenu-arrow {
+    margin-left: 6px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Si le JS détecte un débordement → ouverture à gauche */
+.dropdown-submenu.open-left {
+    left: auto;
+    right: 100%;
+}
+
+
+.dropdown-submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+}
+
+.dropdown-sub:hover .dropdown-submenu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Burger */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 70%;
+        height: calc(100vh - 70px);
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* Sous-menus en mobile → ouverture verticale */
+    .dropdown-menu,
+    .dropdown-submenu {
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        background: none;
+        box-shadow: none;
+        padding-left: 10px;
+    }
+
+    .submenu-arrow {
+        display: none;
+    }
+    
+    .logo-image {
+        height: 35px;
+    }
+}
+

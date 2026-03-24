@@ -1,0 +1,100 @@
+/* ------------------------------------------
+   COMPONENTS — Cards, boutons, timeline, grid, carrousel
+------------------------------------------- */
+
+/* ----- Boutons ----- */
+.button {
+    background: var(--blue);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: var(--mint);
+}
+
+/* ----- Cards ----- */
+.profile-card, .experience {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    border-left: 6px solid var(--blue);
+    animation: fadeInUp 0.8s ease;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--blue);
+}
+
+/* ----- Socials ----- */
+.socials {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.socials a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: var(--blue);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+    color: var(--mint);
+    transform: scale(1.15);
+}
+
+/* ----- Carrousel ----- */
+.carousel-section {
+    width: 90%;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.carousel-container {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.carousel-btn {
+    background: var(--deep);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--blue);
+}

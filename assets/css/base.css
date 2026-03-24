@@ -1,0 +1,50 @@
+/* ------------------------------------------
+   BASE — Palette, resets, typographies, animations
+------------------------------------------- */
+
+/* ----- Palette Tranquil Waters ----- */
+:root {
+    --deep: #1F363D;
+    --blue: #40798C;
+    --mint: #70A9A1;
+    --sage: #9EC1A3;
+    --breeze: #CFE0C3;
+    --text-dark: #1F363D;
+    --background: #F7F9FA;
+}
+
+/* ----- Reset ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ----- Animations ----- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
