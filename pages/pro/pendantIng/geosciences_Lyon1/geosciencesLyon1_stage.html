@@ -1,1 +1,110 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Nelly Pons</title>
+
+    <!-- CSS globaux -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/story.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <section class="sub-hero">
+        <div class="sub-hero-overlay">
+            <h1>Stage 1 mois - Université Lyon 1 </h1>
+            <p>Laboratoire de Géociences, Université Lyon 1, France - 2017</p>
+        </div>
+    </section>
+
+    <!-- ÉCRAN 1 -->
+    <section class="story-screen center">
+        <div class="story-inner">
+
+            <div class="story-text">
+                <h2>Stage de recherche en géosciences – Université Lyon 1</h2>
+
+                <p>
+                    Lors de ma première année du cycle ingénieur, j’ai choisi de réaliser un stage de recherche volontaire 
+                    d’un mois durant l’été au laboratoire de Géosciences de l’Université Claude Bernard Lyon 1, 
+                    sous la supervision du Pr. Thierry Alboussière.
+                </p>
+
+                <p>
+                    L’objectif du stage était d’étudier des phénomènes physiques se produisant dans les chambres magmatiques, 
+                    le noyau terrestre ou encore le manteau profond, à travers des expériences réalisées à température et pression 
+                    ambiantes. Ces processus ne concernent pas uniquement la Terre : ils interviennent également dans l’évolution 
+                    interne d’autres planètes. Lors du refroidissement d’un liquide en fusion, des cristaux peuvent se former et 
+                    croître, créant une zone poreuse appelée <em>mushy layer</em>. Parallèlement, le liquide résiduel s’appauvrit 
+                    en certains éléments chimiques. Comprendre l’évolution temporelle de ce système est essentiel pour prédire 
+                    l’état futur de l’intérieur des planètes.
+                </p>
+
+                <p>
+                    Au laboratoire, les expériences consistaient à refroidir un mélange d’eau et de chlorure d’ammonium entre 
+                    50 °C et 10 °C. Le sel cristallisait en formant une couche de « givre », tandis que l’eau résiduelle devenait 
+                    progressivement appauvrie en chlorure d’ammonium. Les phénomènes générés sont complexes : le liquide salé 
+                    entre en convection à cause du gradient de température (une paroi est refroidie) et des variations de 
+                    concentration en sel (comme l’eau de mer, une solution riche en sel est plus dense qu’une solution diluée). 
+                    Une convection interne apparaît également dans la mushy layer, sous forme de « cheminées » où le liquide 
+                    appauvri s’échappe après avoir perdu de nouveaux cristaux. Ces cheminées participent au refroidissement du 
+                    système et à la croissance de la couche poreuse. La cristallisation influence donc la composition du liquide 
+                    et la dynamique convective, créant un couplage riche et non linéaire.
+                </p>
+
+                <p>
+                    Durant ce stage, j’ai appris à mettre en œuvre ces expériences, à modifier l’inclinaison de la plaque froide 
+                    ainsi que la composition initiale du mélange. Je me suis familiarisée avec la mesure de température à l’aide 
+                    de sondes en platine, permettant d’obtenir des profils thermiques verticaux. J’ai également mis en place une 
+                    méthode de Schlieren synthétique (proche du PIV) pour visualiser les panaches convectifs issus des cheminées 
+                    et la stratification du fluide. Enfin, j’ai utilisé LabVIEW pour l’acquisition des données et développé des 
+                    programmes MATLAB afin d’extraire des informations à partir de la corrélation d’images Schlieren.
+                </p>
+            </div>
+
+
+            <div class="story-photo" data-gallery="geosciences-1"></div>
+
+            <div class="lyon1-logo">
+                <img src="/assets/images/pro/stages/geosciences/logo-Lyon1.png" >
+                <img src="/assets/images/pro/stages/geosciences/logo-ENSLyon.png" >  
+            </div>
+            </div>
+            <!-- <div class="story-photo" data-gallery="mines-1"></div> -->
+
+        </div>
+    </section>
+
+   <div id="site-footer"></div>
+
+    <!-- Scripts globaux -->
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/updates.js"></script>
+    <script src="/assets/js/load-headerfr.js"></script>
+    <script src="/assets/js/load-footerfr.js"></script>
+
+    <!-- Nouveau système narratif -->
+    <script src="/assets/js/story.js"></script>
+
+    <!-- Définition des galeries -->
+    <script>
+        galleries["geosciences-1"] = [
+            { src: "/assets/images/pro/stages/geosciences/cuve.jpg", caption: "Photographie de la cuve de cristallisation." },
+            { src: "/assets/images/pro/stages/geosciences/cuve2.jpg", caption: "Photographie de la cuve en cours de cristallisation." },
+            { src: "/assets/images/pro/stages/geosciences/cuve3.jpg", caption: "Visualisation du flux de convection avec MatPIV." },
+            { src: "/assets/images/pro/stages/geosciences/cuve4.jpg", caption: "Visualisation du flux de convection avec MatPIV pour une cuve inclinée." }
+        ];
+
+
+    </script>
+
+</body>
+</html>
