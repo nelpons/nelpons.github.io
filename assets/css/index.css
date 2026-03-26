@@ -23,8 +23,13 @@
     min-height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    z-index: -1;
+    z-index: 1;
     filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* contenu devant */
 }
 
 .hero-title {

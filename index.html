@@ -24,7 +24,7 @@
         <div class="hero-content">
             <h1 class="hero-title">Science. Ingénierie. Exploration.</h1>
             <p class="hero-subtitle">Un espace pour mes projets, mes recherches et mes inspirations.</p>
-            <a href="#about" class="scroll-btn">Découvrir</a>
+            <a href="#projects" class="scroll-btn">Découvrir</a>
         </div>
     </section>
 
@@ -52,7 +52,7 @@
     </section>
 
     <!-- ACTUALITÉ DU SITE -->
-     <section id="news" class="news-section-dark">
+    <section id="news" class="news-section-dark">
         <h2>Dernière mise à jour</h2>
 
         <div id="latest-update" class="news-card-dark">
@@ -86,7 +86,7 @@
     </section>
 
     <!-- derniers projets -->
-    <section class="projects-section">
+    <section id="projects" class="projects-section">
         <h2>Derniers projets</h2>
 
         <div class="projects-grid">
@@ -109,8 +109,6 @@
         </div>
     </section>
 
-    <!-- SOCIALS -->
-    
 
     <!-- SCRIPTS -->
     <script>
@@ -140,6 +138,19 @@
     </script>
 
     <div id="site-footer"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.scroll-btn');
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector('#projects');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    </script>
 
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/updates.js"></script>
