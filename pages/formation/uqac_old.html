@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Nelly Pons</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <section class="sub-hero">
+        <div class="sub-hero-overlay">
+            <h1>Master en Ingénierie - UQAC</h1>
+            <p>Programme international en matériaux et ingénierie - 2019 à 2020</p>
+        </div>
+    </section>
+
+    <section id="uqac" class="section section-formation uqac-page">
+
+        
+<!----------------------------------------- BEGIN 1 -------------------------------------------------------------->
+    <section class="uqac-screen-dark left-text">
+
+        <div class="screen-inner">
+
+            <div class="screen-text">
+                <h2>Double diplôme – Master en Ingénierie</h2>
+                <p>
+                    J’ai eu l’opportunité de réaliser ma cinquième année d’études à l’Université du Québec à Chicoutimi (UQAC). 
+                    Cette année s’est déroulée de septembre 2018 à juin 2019 sur place, suivie d’un stage de fin d’études de six mois 
+                    que j’ai effectué chez Airbus à Friedrichshafen, en Allemagne.
+                </p>
+
+                <p>
+                    Cet échange universitaire s’inscrivait dans le cadre d’un double diplôme, me permettant d’obtenir une 
+                    Maîtrise en Ingénierie des matériaux (M. Ing). L’année était structurée en trois trimestres : 
+                    l’automne (août–décembre), l’hiver (janvier–avril) et l’été (mai–juin), chacun proposant un ensemble de cours.
+                </p>
+
+                <p>
+                    J’ai ainsi pu suivre des enseignements variés tels que la métallurgie (notamment les procédés de l’aluminium), 
+                    les matériaux composites, la mécanique des solides et leur modélisation (SolidWorks, RDM…), ainsi que la mécanique 
+                    des fluides et leur analyse (Matlab). S’ajoutaient également des cours de corrosion et dégradation des matériaux, 
+                    de gestion de projet, de stratégie des organisations, de gestion du cycle de vie, de métallurgie physique et mécanique 
+                    avancée, ainsi que de procédés d’assemblage.
+                </p>
+            </div>
+
+            <div class="screen-photo">
+                <button class="photo-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="photo-viewer small">
+                    <img id="photoDisplay1" src="/assets/images/formation/uqac/uqacete.jpg" alt="">
+                </div>
+
+                <button class="photo-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <p class="photo-caption" id="photoCaption1">
+                    Le campus de l’UQAC sous le soleil d’été.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+    const photos1 = [
+        { src: "/assets/images/formation/uqac/metal2.jpg", caption: "Travaux pratiques autour des procédés de l’aluminium." },
+        { src: "/assets/images/formation/uqac/uqac_press.jpg", caption: "Équipements de laboratoire dédiés aux essais mécaniques." },
+        { src: "/assets/images/formation/uqac/uqac_press2.jpg", caption: "Manipulation et préparation d’échantillons." },
+        { src: "/assets/images/formation/uqac/metal3.JPG", caption: "Analyse des comportements mécaniques des matériaux." },
+        { src: "/assets/images/formation/uqac/metal4.JPG", caption: "Observation des structures internes des matériaux." }
+    ];
+
+    let index1 = 0;
+    const display1 = document.getElementById("photoDisplay1");
+    const caption1 = document.getElementById("photoCaption1");
+
+    document.querySelector(".left-text .next").onclick = () => {
+        index1 = (index1 + 1) % photos1.length;
+        display1.src = photos1[index1].src;
+        caption1.textContent = photos1[index1].caption;
+    };
+
+    document.querySelector(".left-text .prev").onclick = () => {
+        index1 = (index1 - 1 + photos1.length) % photos1.length;
+        display1.src = photos1[index1].src;
+        caption1.textContent = photos1[index1].caption;
+    };
+    </script>
+    <!----------------------------------------- END 1 -------------------------------------------------------------->
+
+        <!----------------------------------------- BEGIN 2 -------------------------------------------------------------->
+    <section class="uqac-screen-dark right-text">
+
+        <div class="screen-inner">
+
+            <div class="screen-text">
+                <h2>Campus en été et en hiver</h2>
+                <p>
+                    À mon arrivée, le campus baignait dans la lumière d’été. Les espaces verts, les bâtiments ouverts
+                    et l’ambiance chaleureuse du Saguenay ont rendu l’adaptation immédiate et agréable.
+                    L’hiver québécois transforme complètement le campus : silence, lumière bleutée, neige omniprésente.
+                    C’est un environnement unique, à la fois exigeant et magnifique.
+                </p>
+            </div>
+
+            <div class="screen-photo">
+                <button class="photo-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="photo-viewer small">
+                    <img id="photoDisplay2" src="/assets/images/formation/uqac/uqac_neige.jpg" alt="">
+                </div>
+
+                <button class="photo-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <p class="photo-caption" id="photoCaption2">
+                    Le campus de l’UQAC, au cœur de l’hiver québécois.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+    const photos2 = [
+        { src: "/assets/images/formation/uqac/uqacete.jpg", caption: "Le campus de l’UQAC découvert le premier jour." },
+        { src: "/assets/images/formation/uqac/uqacwelcome.jpg", caption: "J'ai pu jouer le rôle de guide pour les nouveaux étudiants en étant moi même nouvelle." },
+        { src: "/assets/images/formation/uqac/bus.jpg", caption: "Les bus de l'Université, indispensables au quotidien." },
+        { src: "/assets/images/formation/uqac/uqac_neige.jpg", caption: "Le campus de l’UQAC, au cœur de l’hiver québécois." },
+        { src: "/assets/images/formation/uqac/uqac_neige2.jpg", caption: "Les bâtiments de l’université sous un manteau blanc." },
+        { src: "/assets/images/formation/uqac/uqac_snow.jpg", caption: "L'Université qui organise un concours de snow devant le bâtiment principal." },
+        { src: "/assets/images/formation/uqac/uqac.jpg", caption: "Les couloires de l'Université abritent des collections de squelettes d'animaux." },
+        { src: "/assets/images/formation/uqac/uqac2.jpg", caption: "Les couloires de l'Université abritent des collections de taxidermie." },
+        { src: "/assets/images/formation/uqac/uqac3.jpg", caption: "L'Université propose l'utilisation de casier typique d'Amérique du Nord." },
+        { src: "/assets/images/formation/uqac/uqac_neige3.JPG", caption: "Chicoutimi et les rives du Saguenay en hiver." }
+    ];
+
+    let index2 = 0;
+    const display2 = document.getElementById("photoDisplay2");
+    const caption2 = document.getElementById("photoCaption2");
+
+    document.querySelector(".right-text .next").onclick = () => {
+        index2 = (index2 + 1) % photos2.length;
+        display2.src = photos2[index2].src;
+        caption2.textContent = photos2[index2].caption;
+    };
+
+    document.querySelector(".right-text .prev").onclick = () => {
+        index2 = (index2 - 1 + photos2.length) % photos2.length;
+        display2.src = photos2[index2].src;
+        caption2.textContent = photos2[index2].caption;
+    };
+    </script>
+
+    <!----------------------------------------- END 2 -------------------------------------------------------------->
+
+
+    <!----------------------------------------- BEGIN 5 -------------------------------------------------------------->
+    <section class="uqac-screen-dark left-text">
+
+        <div class="screen-inner">
+
+            <div class="screen-text">
+                <h2>Vie à Chicoutimi</h2>
+                <p>
+                    Chicoutimi est une ville à taille humaine, chaleureuse et vivante. Entre cafés, rues enneigées
+                    et vues sur le Saguenay, elle offre un cadre de vie unique.
+                    Hockey, football américain, événements étudiants… Les sports rythment la vie universitaire
+                    et créent une énergie collective unique.
+                    La découverte passe aussi par l’assiette : poutine, érable, chocolat glacé… des plaisirs simples
+                    mais emblématiques de la culture québécoise.
+                </p>
+            </div>
+
+            <div class="screen-photo">
+                <button class="photo-btn prev prev5"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="photo-viewer small">
+                    <img id="photoDisplay5" src="/assets/images/formation/uqac/chicoutimi.jpg" alt="">
+                </div>
+
+                <button class="photo-btn next next5"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <p class="photo-caption" id="photoCaption5">
+                    Chicoutimi sous un manteau blanc.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+    const photos5 = [
+        { src: "/assets/images/formation/uqac/chicoutimi5.jpg", caption: "L'église de Chicoutimi'." },
+        { src: "/assets/images/formation/uqac/chicoutimi6.jpg", caption: "La fontaine de Chicoutimi sur le Fjord du Saint Laurent." },
+        { src: "/assets/images/formation/uqac/chicoutimi7.jpg", caption: "L'Hotel de Ville de Chicoutimi." },
+        { src: "/assets/images/formation/uqac/chicoutimi2.JPG", caption: "Les rives du Saguenay gelées." },
+        { src: "/assets/images/formation/uqac/chicoutimi3.jpg", caption: "Panorama hivernal du centre-ville." },
+        { src: "/assets/images/formation/uqac/hockey2.JPG", caption: "Match de hockey, sport emblématique du Québec." },
+        { src: "/assets/images/formation/uqac/hockey.JPG", caption: "Ambiance glacée dans l’aréna." },
+        { src: "/assets/images/formation/uqac/football.JPG", caption: "Match de football américain sur le campus." },
+        { src: "/assets/images/formation/uqac/football2.JPG", caption: "Match de football américain sur le campus." },
+        { src: "/assets/images/formation/uqac/football3.JPG", caption: "Match de football américain sur le campus." },
+        { src: "/assets/images/formation/uqac/football4.jpg", caption: "Les couleurs et l’énergie des équipes locales." },
+        { src: "/assets/images/formation/uqac/golf.jpg", caption: "Le mini-golf dans le noir de Chicoutimi." },
+        { src: "/assets/images/formation/uqac/golf2.jpg", caption: "Le mini-golf dans le noir de Chicoutimi." },
+        { src: "/assets/images/formation/uqac/poutine.JPG", caption: "La poutine traditionnelle : un incontournable." },
+        { src: "/assets/images/formation/uqac/chocolat.JPG", caption: "Glace au chocolat, version québécoise." },
+        { src: "/assets/images/formation/uqac/chocolat2.JPG", caption: "Les plaisirs sucrés du Saguenay." }
+    ];
+
+    let index5 = 0;
+    const display5 = document.getElementById("photoDisplay5");
+    const caption5 = document.getElementById("photoCaption5");
+
+    document.querySelector(".next5").onclick = () => {
+        index5 = (index5 + 1) % photos5.length;
+        display5.src = photos5[index5].src;
+        caption5.textContent = photos5[index5].caption;
+    };
+
+    document.querySelector(".prev5").onclick = () => {
+        index5 = (index5 - 1 + photos5.length) % photos5.length;
+        display5.src = photos5[index5].src;
+        caption5.textContent = photos5[index5].caption;
+    };
+    </script>
+
+        <!----------------------------------------- END 5 -------------------------------------------------------------->
+    <!----------------------------------------- BEGIN 4 -------------------------------------------------------------->
+    <section class="uqac-screen-dark right-text">
+
+        <div class="screen-inner">
+
+            <div class="screen-text">
+                <h2>L’hiver québécois</h2>
+                <p>
+                    Le Saguenay vit un hiver long, intense et magnifique. Températures extrêmes, neige omniprésente,
+                    lumière polaire… une atmosphère unique qui transforme le quotidien.
+                    Le Saguenay offre un accès direct à des paysages spectaculaires : fjord, forêts, lacs gelés.
+                    Un équilibre précieux face à l’intensité des études.
+                </p>
+            </div>
+
+            <div class="screen-photo">
+                <button class="photo-btn prev prev4"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="photo-viewer small">
+                    <img id="photoDisplay4" src="/assets/images/formation/uqac/neige1.jpg" alt="">
+                </div>
+
+                <button class="photo-btn next next4"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <p class="photo-caption" id="photoCaption4">
+                    Les rues de Chicoutimi sous la neige.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+    const photos4 = [
+        { src: "/assets/images/formation/uqac/neige2.jpg", caption: "Ambiance hivernale dans les parcs de Chicoutimi." },
+        { src: "/assets/images/formation/uqac/neige3.jpg", caption: "Neige fraîche et lumière nordique." },
+        { src: "/assets/images/formation/uqac/temp.jpg", caption: "Le thermomètre stagnait à -30°C pendant des semaines." },
+        { src: "/assets/images/formation/uqac/neige1.jpg", caption: "Les galères quotidienne avec le froid." },
+        { src: "/assets/images/formation/uqac/chicoutimi.jpg", caption: "Chicoutimi sous un manteau blanc." },
+        { src: "/assets/images/formation/uqac/chicoutimi4.jpg", caption: "Neige fraîche et lumière nordique." },
+        { src: "/assets/images/formation/uqac/nelly_neige.jpg", caption: "Découverte du vrai hiver québécois." },
+        { src: "/assets/images/formation/uqac/canada.jpg", caption: "Le fjord du Saguenay, majestueux et glacé." },
+        { src: "/assets/images/formation/uqac/ski_fond.jpg", caption: "Le fjord du Saguenay, majestueux et glacé." },
+        { src: "/assets/images/formation/uqac/fleuve.jpg", caption: "Les grands espaces québécois, entre eau et forêt." }
+    ];
+
+    let index4 = 0;
+    const display4 = document.getElementById("photoDisplay4");
+    const caption4 = document.getElementById("photoCaption4");
+
+    document.querySelector(".next4").onclick = () => {
+        index4 = (index4 + 1) % photos4.length;
+        display4.src = photos4[index4].src;
+        caption4.textContent = photos4[index4].caption;
+    };
+
+    document.querySelector(".prev4").onclick = () => {
+        index4 = (index4 - 1 + photos4.length) % photos4.length;
+        display4.src = photos4[index4].src;
+        caption4.textContent = photos4[index4].caption;
+    };
+    </script>
+
+    <!----------------------------------------- END 4 -------------------------------------------------------------->
+
+
+    <!----------------------------------------- BEGIN 9 -------------------------------------------------------------->
+    <section class="uqac-screen-dark left-text">
+
+        <div class="screen-inner">
+
+            <div class="screen-text">
+                <h2>Ce que cette année m’a apporté</h2>
+                <p>
+                    Cette année au Québec a été bien plus qu’un échange universitaire. Elle a renforcé mes compétences
+                    techniques, mon autonomie, ma capacité à évoluer dans un environnement international et ma curiosité
+                    pour les matériaux avancés.
+                </p>
+            </div>
+
+            <div class="screen-photo">
+                <button class="photo-btn prev prev9"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="photo-viewer small">
+                    <img id="photoDisplay9" src="/assets/images/formation/uqac/uqacete.jpg" alt="">
+                </div>
+
+                <button class="photo-btn next next9"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <p class="photo-caption" id="photoCaption9">
+                    Une année fondatrice, entre matériaux, culture et découverte.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+    const photos9 = [
+        { src: "/assets/images/formation/uqac/uqacete.jpg", caption: "Une année fondatrice, entre matériaux, culture et découverte." },
+        { src: "/assets/images/formation/uqac/uqac_neige.jpg", caption: "Un environnement exigeant mais inspirant." }
+    ];
+
+    let index9 = 0;
+    const display9 = document.getElementById("photoDisplay9");
+    const caption9 = document.getElementById("photoCaption9");
+
+    document.querySelector(".next9").onclick = () => {
+        index9 = (index9 + 1) % photos9.length;
+        display9.src = photos9[index9].src;
+        caption9.textContent = photos9[index9].caption;
+    };
+
+    document.querySelector(".prev9").onclick = () => {
+        index9 = (index9 - 1 + photos9.length) % photos9.length;
+        display9.src = photos9[index9].src;
+        caption9.textContent = photos9[index9].caption;
+    };
+    </script>
+
+    <!----------------------------------------- END 9 ------------------------------------------------------------>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Header transparent → opaque
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            header.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        // Scroll smooth
+        document.querySelector(".scroll-btn")?.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.querySelector("#profile").scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Reveal animation
+        function revealOnScroll() {
+            document.querySelectorAll(".reveal").forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add("visible");
+                }
+            });
+        }
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/updates.js"></script>
+    <script src="/assets/js/caroussel.js"></script>
+    <script src="/assets/js/load-headerfr.js"></script>
+    <script src="/assets/js/load-footerfr.js"></script>
+    <script src="/assets/js/story.js"></script>
+    <script>
+    galleries["uqac-1"] = [
+        { src: "/assets/images/...", caption: "..." },
+        { src: "/assets/images/...", caption: "..." }
+    ];
+    </script>
+
+</body>
+</html>

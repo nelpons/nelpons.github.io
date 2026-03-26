@@ -2,34 +2,69 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>CV – Nelly Pons</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Portfolio – Nelly Pons</title>
+
+    <!-- CSS globaux -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/story.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+    <div id="site-header"></div>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../pro.html">Professionnel</a></li>
-            <li><a href="../perso.html">Personnel</a></li>
-            <li><a href="../en/index.html">EN</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="sub-hero">
+        <div class="sub-hero-overlay">
+            <h1>Curriculum Vitae</h1>
+            <p>Mon CV mis à jour est disponible ci-dessous.</p>
+        </div>
+    </section>
 
-<section class="content">
-    <h1>Curriculum Vitae</h1>
+    <!-- ÉCRAN 1 -->
+    <section class="story-screen center">
+        <div class="story-inner">
 
-    <p>Tu pourras ici :</p>
-    <ul>
-        <li>afficher ton CV directement en HTML</li>
-        <li>ou ajouter un bouton pour télécharger ton CV PDF</li>
-        <li>ou les deux</li>
-    </ul>
+            <div class="story-text">
+                <h2>Télécharger mon CV</h2>
+                <p>
+                    
+                </p>
 
-    <p>Dis-moi ce que tu préfères et je te prépare la version correspondante.</p>
-</section>
+                <p class="official-link">
+                    <a href="/assets/pdf/260309_Nelly_PONS_CV_ferrari.pdf" target="_blank">
+                        Consulter mon CV (PDF)
+                    </a>
+                </p>
+            </div>
+            <!-- <div class="story-photo" data-gallery="mines-1"></div> -->
+
+        </div>
+    </section>
+
+   <div id="site-footer"></div>
+
+    <!-- Scripts globaux -->
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/updates.js"></script>
+    <script src="/assets/js/load-headerfr.js"></script>
+    <script src="/assets/js/load-footerfr.js"></script>
+
+    <!-- Nouveau système narratif -->
+    <script src="/assets/js/story.js"></script>
+
+    <!-- Définition des galeries -->
+    <script>
+        galleries["mines-1"] = [
+            { src: "/assets/images/mines/minesparis.jpg", caption: "Entrée de l'école des Mines Paris PSL." },
+            { src: "/assets/images/mines/bibliothequemines.jpg", caption: "Bibliothèque de l'école des Mines Paris PSL." }
+        ];
+
+
+    </script>
 
 </body>
 </html>

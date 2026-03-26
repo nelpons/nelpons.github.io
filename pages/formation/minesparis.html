@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Nelly Pons</title>
+
+    <!-- CSS globaux -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/story.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <section class="sub-hero">
+        <div class="sub-hero-overlay">
+            <h1>Doctorat - Mines Paris PSL</h1>
+            <p>Doctorat en Mécanique et Sciences des Matériaux - 2021-2026</p>
+        </div>
+    </section>
+
+    <!-- ÉCRAN 1 -->
+    <section class="story-screen left">
+        <div class="story-inner">
+
+            <div class="story-text">
+                <h2>Mines Paris PSL</h2>
+
+                <p>
+                    Ecole d'ingénieurs de renommée internationale, Mines Paris PSL est un établissement d'excellence
+                    qui forme des ingénieurs, des chercheurs et des leaders dans de nombreux domaines scientifiques et 
+                    technologiques. Fondée en 1783, l'école a une longue tradition d'innovation et de recherche de pointe.
+                </p>
+
+            </div>
+            <div class="story-photo" data-gallery="mines-1"></div>
+
+        </div>
+    </section>
+
+    <!-- ÉCRAN 2 -->
+    <section class="story-screen right">
+        <div class="story-inner">
+
+            <div class="story-text">
+                <h2>Centre de mise en forme des matériaux, Cemef</h2>
+                <p>
+                    J'ai démarré ma thèse au Centre de mise en forme des matériaux, Cemef, un laboratoire de recherche de Mines Paris PSL spécialisé dans la
+                </p>
+
+                <p class="official-link">
+                    <a href="https://www.cemef.minesparis.psl.eu/" target="_blank">
+                        Site officiel du Centre de mise en forme des Matériaux, Cemef - Mines Paris PSL
+                    </a>
+                </p>
+            </div>
+            <div class="story-photo" data-gallery="mines-2"></div>
+        </div>
+    </section>
+
+    <!-- ÉCRAN 3 -->
+    <section class="story-screen left">
+        <div class="story-inner">
+
+            <div class="story-text">
+                <h2>Centre des matériaux, CMAT</h2>
+                <p>
+                    Grâce 
+                    J'ai effectué mes essais et mes recherches au laboratoire lorsqu'il était situé à Evry. 
+                    Depuis il a déménagé à Versailles Satory.
+                </p>
+                <p class="official-link">
+                    <a href="https://www.minesparis.psl.eu/cmat/" target="_blank">
+                        Site officiel du Centre des Matériaux, CMAT - Mines Paris PSL
+                    </a>
+                </p>
+            </div>
+            <div class="story-photo" data-gallery="mines-3"></div>
+        </div>
+    </section>
+
+    <!-- ÉCRAN 4 -->
+    <section class="story-screen center">
+        <div class="story-inner">
+
+            <div class="story-text">
+                <h2>Ce que cette année m’a apporté</h2>
+                <p>
+                    Grâce à cette formation polyvalente, j’ai développé une solide capacité d’adaptation 
+                    et une vision transversale des problématiques en physique et en ingénierie.
+                </p>
+
+
+            <div class="mines-logo">
+                <img src="/assets/images/mines/logo_mines_cemef.png" >
+                     <!-- alt="Logo Mines Paris PSL"> -->
+                <img src="/assets/images/mines/logo_mines_cmat.png" >
+            </div>
+        </div>
+    </section>
+
+   <div id="site-footer"></div>
+
+    <!-- Scripts globaux -->
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/updates.js"></script>
+    <script src="/assets/js/load-headerfr.js"></script>
+    <script src="/assets/js/load-footerfr.js"></script>
+
+    <!-- Nouveau système narratif -->
+    <script src="/assets/js/story.js"></script>
+
+    <!-- Définition des galeries -->
+    <script>
+        galleries["mines-1"] = [
+            { src: "/assets/images/mines/minesparis.jpg", caption: "Entrée de l'école des Mines Paris PSL." },
+            { src: "/assets/images/mines/bibliothequemines.jpg", caption: "Bibliothèque de l'école des Mines Paris PSL." }
+        ];
+        galleries["mines-2"] = [
+            { src: "/assets/images/mines/cemef.jpg", caption: "Centre de mise en forme des matériaux, Cemef." }
+        ];
+        galleries["mines-3"] = [
+            { src: "/assets/images/mines/cmat.jpg", caption: "Entrée de l'école des Mines Paris PSL." }
+        ];
+
+    </script>
+
+</body>
+</html>
