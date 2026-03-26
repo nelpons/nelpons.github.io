@@ -63,3 +63,32 @@ body {
     color: var(--breeze);
     text-decoration: underline;
 }
+
+/* .twitter-tweet {
+    max-width: 20px;
+    margin: 30px auto;
+} */
+.twitter-tweet {
+    transform: scale(1);
+    transform-origin: top left; /* ou center selon ton design */
+    margin: 0 auto;
+}
+.twitter-tweet {
+    height: 1;
+    overflow: hidden;
+}
+.tweets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 010px 0;
+}
+
+.tweet-item {
+    width: 300px; /* largeur finale souhaitée */
+    transform: scale(1); /* réduction */
+    transform-origin: top center;
+}
+
+
