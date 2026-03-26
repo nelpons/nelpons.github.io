@@ -181,6 +181,47 @@
 }
 
 
+.pro-card-modern {
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    background: #0F1A1D;
+    text-decoration: none;
+    color: white;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.pro-card-modern img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    opacity: .85;
+    transition: opacity .35s ease, transform .35s ease;
+}
+
+.pro-card-modern-content {
+    padding: 1.4rem;
+}
+
+.pro-card-modern:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.pro-card-modern:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.pro-card-modern h3 {
+    margin: 0 0 .4rem;
+    color: var(--mint);
+}
+.pro-card-modern p {
+    opacity: 0.85;
+}
+
 /* ----- TIMELINE PREMIUM ----- */
 
 .timeline-section {

@@ -94,7 +94,7 @@
 
 /* <!-- Section à propos --> */
 .about-section {
-    background: linear-gradient(135deg, #0F1A1D, #1F363D);
+    background: linear-gradient(135deg, var(--fonce2), var(--text-dark));
     padding: 5rem 2rem;
     color: white;
 }
@@ -122,7 +122,7 @@
 
 /* <!-- Section actualité dynamique --> */
 .news-section-dark {
-    background: #0F1A1D;
+    background:var(--fonce2);
     padding: 4rem 2rem;
     color: white;
     text-align: center;
@@ -156,7 +156,7 @@
 
 /* <!-- Section 3 entrees --> */
 .entries-section {
-    background: #0F1A1D;
+    background:  var(--fonce2);
     padding: 4rem 2rem;
 }
 
@@ -190,7 +190,7 @@
 
 /* <!-- Section projets --> */
 .projects-section {
-    background: #0F1A1D;
+    background: var(--fonce2);
     padding: 4rem 2rem;
     color: white;
     text-align: center;

@@ -1,0 +1,185 @@
+/* ------------------------------------------
+   STORY — Template narratif immersif
+------------------------------------------- */
+
+/* Écran narratif */
+.story-screen {
+    color: white;
+    padding: 40px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Alternance de nuances */
+.story-screen.left {
+    background: var(--text-dark);
+}
+
+.story-screen.right {
+    background: var(--mid);
+}
+
+.story-screen.center {
+    background: var(--text-dark);
+}
+/* Structure interne */
+.story-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Alternance gauche/droite */
+.story-screen.left .story-text { order: 1; }
+.story-screen.left .story-photo { order: 2; }
+
+.story-screen.right .story-text { 
+    order: 2; 
+    text-align: right; 
+}
+.story-screen.right .story-photo { order: 1; }
+
+/* Cadre vertical */
+.story-screen.left .story-text {
+    border-left: 3px solid var(--mint);
+    padding-left: 20px;
+}
+
+.story-screen.right .story-text {
+    border-right: 3px solid var(--mint);
+    padding-right: 20px;
+}
+
+/* ----- Mode centré (sans photo) ----- */
+.story-screen.center .story-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px; /* plus étroit pour un rendu premium */
+}
+
+.story-screen.center .story-text {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.story-screen.center .story-text h2 {
+    text-align: center;
+}
+
+.story-screen.center .story-text p {
+    text-align: center;
+}
+
+/* Titres & texte */
+.story-text h2 {
+    color: var(--breeze);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 1.15rem;
+    opacity: 0.95;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+/* Photo viewer */
+.story-photo {
+    text-align: center;
+}
+
+.story-viewer {
+    background: var(--fonce);
+    border-radius: 12px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.story-viewer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Légende */
+.story-caption {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--breeze);
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Flèches */
+.story-btn {
+    background: var(--mint);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.2s ease;
+}
+
+.story-btn:hover {
+    background: var(--sage);
+}
+
+/* Polytech Logo */
+.polytech-logo {
+    margin-top: 25px;
+    text-align: left; /* ou center si tu préfères */
+}
+
+.polytech-logo img {
+    width: auto;
+    height: 70px;
+    opacity: 0.95;
+    transition: opacity 0.2s ease;
+}
+
+.polytech-logo img:hover {
+    opacity: 1;
+}
+/* Mines Logo */
+.mines-logo {
+    margin-top: 25px;
+    text-align: left; /* ou center si tu préfères */
+}
+
+.mines-logo img {
+    width: 360px;
+    height: auto;
+    opacity: 0.95;
+    transition: opacity 0.2s ease;
+}
+.mines-logo img:hover {
+    opacity: 1;
+}
+
+/* Lyon 1 Logo */
+.lyon1-logo {
+    margin-top: 25px;
+    text-align: left; /* ou center si tu préfères */
+}
+
+.lyon1-logo img {
+    width: auto;
+    height: 100px;
+    opacity: 0.95;
+    transition: opacity 0.2s ease;
+}
+.lyon1-logo img:hover {
+    opacity: 1;
+}

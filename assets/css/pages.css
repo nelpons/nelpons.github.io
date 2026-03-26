@@ -50,3 +50,66 @@
     border-radius: 8px;
     font-size: 0.9rem;
 }
+
+/* ----- HERO ----- */
+.sub-hero {
+    height: 45vh;
+    background: linear-gradient(135deg, var(--deep), var(--blue), var(--mint));
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sub-hero-overlay {
+    background: rgba(0,0,0,0.45);
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(6px);
+}
+
+.sub-hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.sub-hero-overlay p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ----- CONTENT ----- */
+.sub-content {
+    background: #0F1A1D;
+    padding: 4rem 0;
+    color: white;
+}
+
+.sub-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.sub-container h2 {
+    color: var(--mint);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sub-container p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Animation du carrousel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}

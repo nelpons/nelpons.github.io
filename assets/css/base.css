@@ -11,6 +11,9 @@
     --breeze: #CFE0C3;
     --text-dark: #1F363D;
     --background: #F7F9FA;
+    --mid: #132327;
+    --fonce: #0a171b;
+    --fonce2: #0F1A1D;
 }
 
 /* ----- Reset ----- */
@@ -47,4 +50,16 @@ body {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.official-link a {
+    color: var(--mint);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.official-link a:hover {
+    color: var(--breeze);
+    text-decoration: underline;
 }
