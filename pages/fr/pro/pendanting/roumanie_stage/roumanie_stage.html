@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage en Roumanie – Nelly Pons</title>
+
+    <!-- Ton CSS global -->
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- CSS spécifique si tu en as un -->
+    <link rel="stylesheet" href="roumanie.css">
+</head>
+
+<body>
+
+<section class="page-header">
+    <h1>Stage en Roumanie</h1>
+    <p>Materials Science Laboratory • Université Politehnica de Bucarest • 2018</p>
+</section>
+
+<!-- CARROUSEL PHOTOS -->
+<section class="carousel-section">
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <img src="assets/roumanie-1.jpg" alt="Photo stage Roumanie">
+            <img src="assets/roumanie-2.jpg" alt="Photo laboratoire">
+            <img src="assets/roumanie-3.jpg" alt="Projet extrusion">
+        </div>
+    </div>
+    <div class="carousel-buttons">
+        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn next">›</button>
+    </div>
+</section>
+
+<!-- CONTENU -->
+<section class="content-section">
+
+    <h2>Contexte du stage</h2>
+    <p>
+        Ce stage de 3 mois au sein du Materials Science Laboratory de l’Université Politehnica de Bucarest 
+        m’a permis de travailler sur la <strong>création et l’extrusion d’un nouveau filament composite</strong> 
+        à base de <strong>CaCO₃ et ABS</strong>. L’objectif était d’explorer de nouvelles formulations 
+        pour l’impression 3D, en étudiant leur comportement mécanique et leur stabilité lors du procédé d’extrusion.
+    </p>
+
+    <h2>Missions principales</h2>
+    <ul>
+        <li>Formulation d’un nouveau matériau composite CaCO₃/ABS.</li>
+        <li>Extrusion du filament et optimisation des paramètres de procédé.</li>
+        <li>Caractérisation du matériau (aspect, homogénéité, comportement thermique).</li>
+        <li>Préparation d’échantillons pour essais mécaniques et thermiques.</li>
+        <li>Analyse des résultats et recommandations pour l’amélioration du procédé.</li>
+    </ul>
+
+    <h2>Compétences développées</h2>
+    <div class="skills-box">
+        <span>Extrusion</span>
+        <span>Polymères</span>
+        <span>Matériaux composites</span>
+        <span>Analyse expérimentale</span>
+        <span>Travail en laboratoire</span>
+        <span>Autonomie & initiative</span>
+    </div>
+
+    <h2>Résumé</h2>
+    <p>
+        Ce stage a été une première immersion dans la recherche en science des matériaux, 
+        avec une forte composante expérimentale. Il a posé les bases de mon intérêt pour 
+        les polymères, la fabrication additive et la compréhension des relations 
+        <em>procédé–structure–propriétés</em>, qui deviendront centrales dans ma thèse.
+    </p>
+
+</section>
+
+<!-- … tout ton HTML … -->
+
+<script>
+const track = document.querySelector('.carousel-track');
+const images = Array.from(track.children);
+let index = 0;
+
+document.querySelector('.next').onclick = () => {
+    index = (index + 1) % images.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+};
+
+document.querySelector('.prev').onclick = () => {
+    index = (index - 1 + images.length) % images.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+};
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Nelly Pons</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <!-- HERO VIDEO -->
+    <section class="hero-full">
+        <video autoplay muted loop class="bg-video">
+            <source src="/assets/videos/background.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Science. Engineering. Exploration.</h1>
+            <p class="hero-subtitle">A space for my projects, research, and inspirations.</p>
+            <a href="#projects" class="scroll-btn">Discover</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <img src="/assets/images/common/Nelly_JO.webp" alt="Photo of Nelly" class="about-photo">
+
+            <div class="about-text">
+                <h2>About</h2>
+                <p>
+                    Materials engineer and soon PhD graduate, I explore the behaviour of materials 
+                    and structures through additive manufacturing, advanced characterization, 
+                    and multi‑scale analysis.
+                </p>
+                <p>
+                    My journey has taken me across France, Canada, and Europe, at the intersection 
+                    of engineering, research, and innovation.
+                </p>
+                <p>
+                    This website gathers my projects, experiences, and personal explorations — 
+                    scientific, technical, and creative.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SITE NEWS -->
+    <section id="news" class="news-section-dark">
+        <h2>Latest update</h2>
+
+        <div id="latest-update" class="news-card-dark">
+            <!-- Content injected automatically by JS -->
+        </div>
+    </section>
+
+    <!-- ENTRIES -->
+    <section class="entries-section">
+        <div class="entries-grid">
+
+            <a href="/pages/en/pro/pro.html" class="entry-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Professional</h3>
+                <p>Internships, projects, PhD, conferences, CV.</p>
+            </a>
+
+            <a href="pages/en/perso/perso.html" class="entry-card">
+                <i class="fa-solid fa-user"></i>
+                <h3>Personal</h3>
+                <p>Travels, photography, crochet, Camino de Santiago.</p>
+            </a>
+
+            <a href="pages/en/perso/photos/photos.html" class="entry-card">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Photos</h3>
+                <p>Latest galleries added.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- LATEST PROJECTS -->
+    <section id="projects" class="projects-section">
+        <h2>Latest projects</h2>
+
+        <div class="projects-grid">
+
+            <a href="/pages/en/these.html" class="project-card">
+                <img src="/assets/images/common/Nelly_PhD.webp">
+                <div class="project-overlay">PhD project</div>
+            </a>
+
+            <a href="/pages/en/pro/engagements/paris2024.html" class="project-card">
+                <img src="/assets/images/common/Nelly_JO.webp">
+                <div class="project-overlay">Volunteer at Paris 2024</div>
+            </a>
+
+            <a href="/pages/en/pro/CV.html" class="project-card">
+                <img src="/assets/images/common/Nelly_PhD.webp">
+                <div class="project-overlay">Latest conference</div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Header transparent → opaque
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            header.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        // Smooth scroll
+        document.querySelector(".scroll-btn")?.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.querySelector("#profile").scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Reveal animation
+        function revealOnScroll() {
+            document.querySelectorAll(".reveal").forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add("visible");
+                }
+            });
+        }
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+
+    <div id="site-footer"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.scroll-btn');
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector('#projects');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    </script>
+
+    <script>
+    const userLang = navigator.language || navigator.userLanguage;
+
+    if (userLang.startsWith("fr")) {
+        window.location.href = "/index.html";
+    } else {
+        window.location.href = "/pages/en/index.html";
+    }
+    </script>
+
+
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/updates.js"></script>
+    <script src="/assets/js/load-header.js"></script>
+    <script src="/assets/js/load-footer.js"></script>
+</body>
+</html>
