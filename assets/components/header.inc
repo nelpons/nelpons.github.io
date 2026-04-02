@@ -6,7 +6,7 @@
             <span></span><span></span><span></span>
         </div>
 
-        <a href="/index.html" class="logo">
+        <a href="/pages/en/index.html" class="logo">
             <img src="/assets/logos/Nelly Pons LogoWhite_vecto2.png" 
                 alt="Nelly Pons Logo" 
                 class="logo-image">
