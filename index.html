@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio – Nelly Pons</title>
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -18,7 +18,7 @@
     <!-- HERO VIDEO -->
     <section class="hero-full">
         <video autoplay muted loop class="bg-video">
-            <source src="assets/videos/background.mp4" type="video/mp4">
+            <source src="/assets/videos/background.mp4" type="video/mp4">
         </video>
 
         <div class="hero-content">
@@ -31,7 +31,7 @@
     <!-- PROFIL -->
     <section id="about" class="about-section">
         <div class="about-container">
-            <img src="assets/images/common/Nelly_JO.webp" alt="Photo de Nelly" class="about-photo">
+            <img src="/assets/images/common/Nelly_JO.webp" alt="Photo de Nelly" class="about-photo">
 
             <div class="about-text">
                 <h2>À propos</h2>
@@ -64,19 +64,19 @@
     <section class="entries-section">
         <div class="entries-grid">
 
-            <a href="pages/pro/pro.html" class="entry-card">
+            <a href="/pages/pro/pro.html" class="entry-card">
                 <i class="fa-solid fa-briefcase"></i>
                 <h3>Professionnel</h3>
                 <p>Stages, projets, thèse, conférences, CV.</p>
             </a>
 
-            <a href="pages/perso/perso.html" class="entry-card">
+            <a href="/pages/perso/perso.html" class="entry-card">
                 <i class="fa-solid fa-user"></i>
                 <h3>Personnel</h3>
                 <p>Voyages, photos, crochet, Saint‑Jacques.</p>
             </a>
 
-            <a href="pages/perso/photos/photos.html" class="entry-card">
+            <a href="/pages/perso/photos/photos.html" class="entry-card">
                 <i class="fa-solid fa-camera"></i>
                 <h3>Photos</h3>
                 <p>Dernières galeries ajoutées.</p>
@@ -92,17 +92,17 @@
         <div class="projects-grid">
 
             <a href="/pages/these.html" class="project-card">
-                <img src="assets/images/common/Nelly_PhD.webp">
+                <img src="/assets/images/common/Nelly_PhD.webp">
                 <div class="project-overlay">Projet de thèse</div>
             </a>
 
             <a href="/pages/pro/engagements/paris2024.html" class="project-card">
-                <img src="assets/images/common/Nelly_JO.webp">
+                <img src="/assets/images/common/Nelly_JO.webp">
                 <div class="project-overlay">Volontaire à Paris 2024</div>
             </a>
 
             <a href="/pages/pro/CV.html" class="project-card">
-                <img src="assets/images/common/Nelly_PhD.webp">
+                <img src="/assets/images/common/Nelly_PhD.webp">
                 <div class="project-overlay">Dernière conférence</div>
             </a>
 
@@ -150,6 +150,16 @@
             }
         });
     });
+    </script>
+
+    <script>
+    const userLang = navigator.language || navigator.userLanguage;
+
+    if (userLang.startsWith("fr")) {
+        window.location.href = "/index.html";
+    } else {
+        window.location.href = "/pages/en/index.html";
+    }
     </script>
 
     <script src="/assets/js/menu.js"></script>

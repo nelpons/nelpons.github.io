@@ -5,5 +5,5 @@
 </section>
 
 <footer class="footer">
-    <p>© 2026 – Nelly Pons. Tous droits réservés.</p>
+    <p>© 2026 – Nelly Pons. All rights reserved.</p>
 </footer>

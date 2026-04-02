@@ -75,7 +75,7 @@
                 </ul>
             </li>
             
-            <li><a href="/pages/en/index.html">EN</a></li>
+            <li><a href="index.html">EN</a></li>
         </ul>
     </nav>
 </header>
