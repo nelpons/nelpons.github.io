@@ -83,7 +83,7 @@
                 </ul>
             </li>
 
-            <li><a href="/pages/fr/index.html">FR</a></li>
+            <li><a href="/index.html">FR</a></li>
         </ul>
     </nav>
 </header>
