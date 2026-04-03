@@ -113,3 +113,74 @@
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
 }
+
+/* =========================
+   HIGHLIGHTS (VERSION THEME)
+========================= */
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+    background: var(--mid);
+    /* margin-top: 40px; */
+}
+
+.highlight-item {
+    background: linear-gradient(145deg, var(--blue), var(--mint));
+    color: white;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    min-width: 160px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.highlight-item h3 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.highlight-item p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.highlight-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   CTA BUTTONS (VERSION THEME)
+========================= */
+
+.cta-buttons {
+    margin-top: 1.5rem;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    background: var(--mint);
+    color: white;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background: var(--deep);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
