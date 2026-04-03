@@ -1,5 +1,5 @@
 // Chargement automatique de la dernière actualité
-fetch("assets/data/updates.json")
+fetch("/assets/data/updates.json")
     .then(response => response.json())
     .then(data => {
         const latest = data.latest;
