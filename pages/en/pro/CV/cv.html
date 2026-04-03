@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CV – Nelly Pons</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Portfolio – Nelly Pons</title>
+
+    <!-- CSS globaux -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/story.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+    <div id="site-header"></div>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../pro.html">Professionnel</a></li>
-            <li><a href="../perso.html">Personnel</a></li>
-            <li><a href="../en/index.html">EN</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="sub-hero">
+        <div class="sub-hero-overlay">
+            <h1>Curriculum Vitae</h1>
+            <p>My updated CV is available below.</p>
+            <div class="cta-buttons">
+                <a href="/assets/pdf/260309_Nelly_PONS_CV_ferrari.pdf" class="btn">Download the CV</a>
+            </div>
+        </div>
+    </section>
 
-<section class="content">
-    <h1>Curriculum Vitae</h1>
 
-    <p>Tu pourras ici :</p>
-    <ul>
-        <li>afficher ton CV directement en HTML</li>
-        <li>ou ajouter un bouton pour télécharger ton CV PDF</li>
-        <li>ou les deux</li>
-    </ul>
+    <div id="site-footer"></div>
 
-    <p>Dis-moi ce que tu préfères et je te prépare la version correspondante.</p>
-</section>
+    <!-- Scripts globaux -->
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/updates.js"></script>
+    <script src="/assets/js/load-header.js"></script>
+    <script src="/assets/js/load-footer.js"></script>
+
+    <!-- Nouveau système narratif -->
+    <script src="/assets/js/story.js"></script>
 
 </body>
 </html>
